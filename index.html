@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ff6f9f" />
+    <title>Maneef's Tiny Love Adventure ✦</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="sky-sprinkles" aria-hidden="true"></div>
+    <main class="page-shell">
+      <section class="hero card" id="intro">
+        <div class="sticker sticker-left">૮ ˶ᵔ ᵕ ᵔ˶ ა</div>
+        <div class="sticker sticker-right">♡ + ♡ = ∞</div>
+        <p class="eyebrow">A VERY IMPORTANT MESSAGE FOR</p>
+        <h1>Maneef <span>✦</span></h1>
+        <div class="envelope" aria-hidden="true"><div class="heart-seal">♥</div></div>
+        <p class="intro-copy">You have been selected for a tiny, squishy, extremely serious love adventure.</p>
+        <button class="primary-btn" id="start-btn">open the silly mission <span>→</span></button>
+        <p class="tiny-note">warning: contains unreasonable amounts of affection</p>
+      </section>
+
+      <section class="adventure hidden" id="adventure" aria-live="polite">
+        <div class="progress-wrap" aria-label="Adventure progress"><div class="progress-bar" id="progress"></div></div>
+
+        <article class="card quest active" data-step="1">
+          <p class="quest-number">QUEST 01 / 03</p>
+          <div class="quest-art cloud">☁️<span>☁️</span><b>☁️</b></div>
+          <h2>Find the grumpy cutie</h2>
+          <p>Rumour says she is somewhere behind these clouds, being very lovable and a little bit <em>hmmph.</em></p>
+          <button class="primary-btn next-btn">boop the clouds ☁️</button>
+        </article>
+
+        <article class="card quest" data-step="2">
+          <p class="quest-number">QUEST 02 / 03</p>
+          <div class="quest-art hug">🧸<span>💗</span></div>
+          <h2>Emergency comfort delivery</h2>
+          <p>I packed you a giant hug, seven forehead kisses, snacks, and one boyfriend who is very fond of you.</p>
+          <button class="primary-btn next-btn">accept delivery ♡</button>
+        </article>
+
+        <article class="card quest" data-step="3">
+          <p class="quest-number">QUEST 03 / 03</p>
+          <div class="quest-art flowers">🌷<span>🌼</span><b>🌸</b></div>
+          <h2>Choose your reward</h2>
+          <p>For being Maneef—the cutest person to ever be a little mad at me—you may collect unlimited tiny love things.</p>
+          <div class="choice-grid">
+            <button class="choice" data-reward="A kiss has been launched directly at your cute face. MWAH!">💋<small>one kiss</small></button>
+            <button class="choice" data-reward="A warm hug is now squeezing you very carefully. No escaping.">🫂<small>one hug</small></button>
+            <button class="choice" data-reward="Official notice: you are my favourite little universe.">💌<small>a note</small></button>
+          </div>
+        </article>
+      </section>
+
+      <section class="card finale hidden" id="finale">
+        <div class="crown">👑</div>
+        <p class="eyebrow">MISSION: SOFTEN MANEEF'S HEART</p>
+        <h2>Completed-ish? <span>♡</span></h2>
+        <p class="big-message">I know I can be a little idiot sometimes.<br />But I’m your little idiot, and I choose you—always, loudly, and with extra kisses.</p>
+        <div class="love-letter">
+          <span>Dear Maneef,</span>
+          <p>Please accept this pocket-sized reminder that you are wildly adored. Your smile is my favourite plot twist, so I will keep trying to earn it—one silly little moment at a time.</p>
+          <strong>Now come here, cutie. ♡</strong>
+        </div>
+        <button class="kiss-btn" id="kiss-btn">send Maneef 100 kisses <span>💋</span></button>
+        <p class="reaction" id="reaction">psst... the correct reaction is: “awww my little idiottt”</p>
+      </section>
+    </main>
+    <div id="toast" role="status"></div>
+    <div class="floating-hearts" id="hearts" aria-hidden="true"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
