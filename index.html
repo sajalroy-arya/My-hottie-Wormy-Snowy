@@ -19,7 +19,7 @@
         <p class="eyebrow">A VERY IMPORTANT MESSAGE FOR</p>
         <h1>Maneef <span>✦</span></h1>
         <div class="envelope" aria-hidden="true"><div class="heart-seal">♥</div></div>
-        <p class="intro-copy">You have been selected for a tiny, squishy, extremely serious love adventure.</p>
+        <p class="intro-copy">You have been selected for an extra-long, squishy, extremely serious love adventure.</p>
         <button class="primary-btn" id="start-btn">open the silly mission <span>→</span></button>
         <p class="tiny-note">warning: contains unreasonable amounts of affection</p>
       </section>
@@ -27,32 +27,71 @@
       <section class="adventure hidden" id="adventure" aria-live="polite">
         <div class="progress-wrap" aria-label="Adventure progress"><div class="progress-bar" id="progress"></div></div>
 
-        <article class="card quest active" data-step="1">
-          <p class="quest-number">QUEST 01 / 03</p>
+        <article class="card quest active">
+          <p class="quest-number">QUEST 01 / 06</p>
           <div class="quest-art cloud">☁️<span>☁️</span><b>☁️</b></div>
           <h2>Find the grumpy cutie</h2>
           <p>Rumour says she is somewhere behind these clouds, being very lovable and a little bit <em>hmmph.</em></p>
           <button class="primary-btn next-btn">boop the clouds ☁️</button>
         </article>
 
-        <article class="card quest" data-step="2">
-          <p class="quest-number">QUEST 02 / 03</p>
+        <article class="card quest">
+          <p class="quest-number">QUEST 02 / 06</p>
+          <div class="quest-art detective">🕵️‍♀️<span>🔎</span></div>
+          <h2>Mood detective report</h2>
+          <p>Case file: Maneef is 100% adorable, 0% safe from surprise affection. Select the evidence.</p>
+          <div class="choice-grid two-wide">
+            <button class="choice reward-btn" data-reward="Evidence accepted: Maneef has a ridiculously cute face. This is science.">🥺<small>cute face</small></button>
+            <button class="choice reward-btn" data-reward="Evidence accepted: her little hmmmph is still somehow precious.">😤<small>cute hmmmph</small></button>
+          </div>
+          <button class="text-btn next-btn">case closed, next clue →</button>
+        </article>
+
+        <article class="card quest">
+          <p class="quest-number">QUEST 03 / 06</p>
           <div class="quest-art hug">🧸<span>💗</span></div>
           <h2>Emergency comfort delivery</h2>
           <p>I packed you a giant hug, seven forehead kisses, snacks, and one boyfriend who is very fond of you.</p>
           <button class="primary-btn next-btn">accept delivery ♡</button>
         </article>
 
-        <article class="card quest" data-step="3">
-          <p class="quest-number">QUEST 03 / 03</p>
-          <div class="quest-art flowers">🌷<span>🌼</span><b>🌸</b></div>
-          <h2>Choose your reward</h2>
-          <p>For being Maneef—the cutest person to ever be a little mad at me—you may collect unlimited tiny love things.</p>
-          <div class="choice-grid">
-            <button class="choice" data-reward="A kiss has been launched directly at your cute face. MWAH!">💋<small>one kiss</small></button>
-            <button class="choice" data-reward="A warm hug is now squeezing you very carefully. No escaping.">🫂<small>one hug</small></button>
-            <button class="choice" data-reward="Official notice: you are my favourite little universe.">💌<small>a note</small></button>
+        <article class="card quest">
+          <p class="quest-number">QUEST 04 / 06</p>
+          <div class="quest-art picnic">🧺<span>🍓</span><b>✨</b></div>
+          <h2>Build our tiny date</h2>
+          <p>Pick every tiny thing you want. There are no wrong answers, except maybe not picking snacks.</p>
+          <div class="choice-grid three-tight">
+            <button class="choice reward-btn" data-reward="Tiny date added: snacks, obviously. Elite decision.">🍪<small>snacks</small></button>
+            <button class="choice reward-btn" data-reward="Tiny date added: a walk where I hold your hand like it is my job.">🌙<small>a walk</small></button>
+            <button class="choice reward-btn" data-reward="Tiny date added: you get to choose the song, even if I pretend I know it.">🎵<small>your song</small></button>
           </div>
+          <button class="text-btn next-btn">pack the date bag →</button>
+        </article>
+
+        <article class="card quest">
+          <p class="quest-number">QUEST 05 / 06</p>
+          <div class="quest-art silly">🐸<span>🎀</span></div>
+          <h2>Very serious silly test</h2>
+          <p>Why did the boyfriend bring a ladder to the relationship?</p>
+          <div class="quiz-options">
+            <button class="quiz-btn" data-quiz="Because he heard the love was on another level. He is also banned from comedy club.">To reach a new level</button>
+            <button class="quiz-btn" data-quiz="No, but this answer is adorable and receives one free kiss.">To find Maneef</button>
+            <button class="quiz-btn" data-quiz="Correct-ish. The actual answer was worse. Please laugh anyway, this is important.">Because he is a little idiot</button>
+          </div>
+          <button class="text-btn next-btn">forgive the joke, continue →</button>
+        </article>
+
+        <article class="card quest">
+          <p class="quest-number">QUEST 06 / 06</p>
+          <div class="quest-art flowers">🌷<span>🌼</span><b>🌸</b></div>
+          <h2>Unlimited affection booth</h2>
+          <p>Tap as many as you like. These are unlimited, non-refundable, and specifically reserved for Maneef.</p>
+          <div class="choice-grid">
+            <button class="choice reward-btn" data-reward="A kiss has been launched directly at your cute face. MWAH!">💋<small>one kiss</small></button>
+            <button class="choice reward-btn" data-reward="A warm hug is now squeezing you very carefully. No escaping.">🫂<small>one hug</small></button>
+            <button class="choice reward-btn" data-reward="Official notice: you are my favourite little universe.">💌<small>a note</small></button>
+          </div>
+          <button class="primary-btn next-btn">I am sufficiently spoiled (probably) ♡</button>
         </article>
       </section>
 
@@ -64,9 +103,18 @@
         <div class="love-letter">
           <span>Dear Maneef,</span>
           <p>Please accept this pocket-sized reminder that you are wildly adored. Your smile is my favourite plot twist, so I will keep trying to earn it—one silly little moment at a time.</p>
-          <strong>Now come here, cutie. ♡</strong>
+          <strong>Happy tears are allowed. You matter that much. ♡</strong>
         </div>
         <button class="kiss-btn" id="kiss-btn">send Maneef 100 kisses <span>💋</span></button>
+        <div class="last-laugh">
+          <p class="eyebrow">FINAL FINAL TASK</p>
+          <h3>Rate this extremely silly boyfriend:</h3>
+          <div class="rating-row">
+            <button class="rating-btn" data-rating="Incorrect. Please retry with more affection.">⭐ okay-ish</button>
+            <button class="rating-btn" data-rating="Accepted. Your prize is another 12 kisses.">💗 cute idiot</button>
+            <button class="rating-btn" data-rating="DING DING DING! Maneef wins one lifelong silly little boyfriend. Congratulations!">🏆 my little idiottt</button>
+          </div>
+        </div>
         <p class="reaction" id="reaction">psst... the correct reaction is: “awww my little idiottt”</p>
       </section>
     </main>
