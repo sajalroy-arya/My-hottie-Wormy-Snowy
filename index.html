@@ -19,57 +19,81 @@
         <p class="eyebrow">A VERY IMPORTANT MESSAGE FOR</p>
         <h1>Maneef <span>✦</span></h1>
         <div class="envelope" aria-hidden="true"><div class="heart-seal">♥</div></div>
-        <p class="intro-copy">You have been selected for an extra-long, squishy, extremely serious love adventure.</p>
-        <button class="primary-btn" id="start-btn">open the silly mission <span>→</span></button>
-        <p class="tiny-note">warning: contains unreasonable amounts of affection</p>
+        <p class="intro-copy">This is a tiny adventure with no skipping allowed. There are important things inside. And a few very silly ones.</p>
+        <button class="primary-btn" id="start-btn">begin the mission <span>→</span></button>
+        <p class="tiny-note">progress unlocks only after each little task is done</p>
       </section>
 
       <section class="adventure hidden" id="adventure" aria-live="polite">
         <div class="progress-wrap" aria-label="Adventure progress"><div class="progress-bar" id="progress"></div></div>
 
         <article class="card quest active">
-          <p class="quest-number">QUEST 01 / 06</p>
-          <div class="quest-art cloud">☁️<span>☁️</span><b>☁️</b></div>
-          <h2>Find the grumpy cutie</h2>
-          <p>Rumour says she is somewhere behind these clouds, being very lovable and a little bit <em>hmmph.</em></p>
-          <button class="primary-btn next-btn">boop the clouds ☁️</button>
+          <p class="quest-number">QUEST 01 / 07 · THE IMPORTANT BIT</p>
+          <div class="quest-art envelope-art">💌<span>🫶</span></div>
+          <h2>A proper sorry</h2>
+          <div class="apology-letter" id="apology-letter">
+            <p>Dear Maneef,</p>
+            <p>I’m genuinely sorry. You deserved openness from me from the beginning, not a situation that made you feel hurt or unsure. I understand why it upset you.</p>
+            <p>I can’t undo that moment, but I want to do better: be honest, reassuring, and someone who makes you feel safe and chosen.</p>
+            <strong>You matter to me a lot. I’m sorry, cutie. ♡</strong>
+          </div>
+          <button class="task-btn" id="read-apology">I read your apology ♡</button>
+          <button class="primary-btn next-btn" disabled>thank you for hearing me →</button>
+          <p class="unlock-note">Read the little letter first to unlock this.</p>
         </article>
 
         <article class="card quest">
-          <p class="quest-number">QUEST 02 / 06</p>
+          <p class="quest-number">QUEST 02 / 07</p>
           <div class="quest-art detective">🕵️‍♀️<span>🔎</span></div>
           <h2>Mood detective report</h2>
-          <p>Case file: Maneef is 100% adorable, 0% safe from surprise affection. Select the evidence.</p>
+          <p>Case file: Maneef is 100% adorable, 0% safe from surprise affection. Choose the strongest evidence.</p>
           <div class="choice-grid two-wide">
-            <button class="choice reward-btn" data-reward="Evidence accepted: Maneef has a ridiculously cute face. This is science.">🥺<small>cute face</small></button>
-            <button class="choice reward-btn" data-reward="Evidence accepted: her little hmmmph is still somehow precious.">😤<small>cute hmmmph</small></button>
+            <button class="choice task-choice" data-reward="Evidence accepted: Maneef has a ridiculously cute face. This is science.">🥺<small>cute face</small></button>
+            <button class="choice task-choice" data-reward="Evidence accepted: her little hmmmph is still somehow precious.">😤<small>cute hmmmph</small></button>
           </div>
-          <button class="text-btn next-btn">case closed, next clue →</button>
+          <button class="primary-btn next-btn" disabled>submit evidence →</button>
+          <p class="unlock-note">Pick an answer to unlock the next clue.</p>
         </article>
 
         <article class="card quest">
-          <p class="quest-number">QUEST 03 / 06</p>
+          <p class="quest-number">QUEST 03 / 07 · MINI GAME</p>
+          <div class="quest-art heart-game-art">🎮<span>💗</span></div>
+          <h2>Catch the runaway kisses</h2>
+          <p>Seven kisses escaped while they were on their way to you. Tap every one before it runs off again!</p>
+          <div class="heart-game" id="heart-game" aria-label="Catch seven moving hearts">
+            <button class="game-heart" aria-label="Catch a kiss">💋</button>
+          </div>
+          <p class="game-score" id="game-score">kisses rescued: 0 / 7</p>
+          <button class="primary-btn next-btn" disabled>all kisses rescued →</button>
+          <p class="unlock-note">Rescue all 7 kisses to continue.</p>
+        </article>
+
+        <article class="card quest">
+          <p class="quest-number">QUEST 04 / 07</p>
           <div class="quest-art hug">🧸<span>💗</span></div>
           <h2>Emergency comfort delivery</h2>
           <p>I packed you a giant hug, seven forehead kisses, snacks, and one boyfriend who is very fond of you.</p>
-          <button class="primary-btn next-btn">accept delivery ♡</button>
+          <button class="task-btn" id="accept-delivery">accept the comfort parcel 🫂</button>
+          <button class="primary-btn next-btn" disabled>parcel received →</button>
+          <p class="unlock-note">Accept your delivery first. It is very important cargo.</p>
         </article>
 
         <article class="card quest">
-          <p class="quest-number">QUEST 04 / 06</p>
+          <p class="quest-number">QUEST 05 / 07</p>
           <div class="quest-art picnic">🧺<span>🍓</span><b>✨</b></div>
           <h2>Build our tiny date</h2>
-          <p>Pick every tiny thing you want. There are no wrong answers, except maybe not picking snacks.</p>
+          <p>Pick all three. There are no wrong answers, except maybe not picking snacks.</p>
           <div class="choice-grid three-tight">
-            <button class="choice reward-btn" data-reward="Tiny date added: snacks, obviously. Elite decision.">🍪<small>snacks</small></button>
-            <button class="choice reward-btn" data-reward="Tiny date added: a walk where I hold your hand like it is my job.">🌙<small>a walk</small></button>
-            <button class="choice reward-btn" data-reward="Tiny date added: you get to choose the song, even if I pretend I know it.">🎵<small>your song</small></button>
+            <button class="choice collect-choice" data-reward="Tiny date packed: snacks. Elite decision.">🍪<small>snacks</small></button>
+            <button class="choice collect-choice" data-reward="Tiny date packed: a walk where I hold your hand like it is my job.">🌙<small>a walk</small></button>
+            <button class="choice collect-choice" data-reward="Tiny date packed: you choose the song, even if I pretend I know it.">🎵<small>your song</small></button>
           </div>
-          <button class="text-btn next-btn">pack the date bag →</button>
+          <button class="primary-btn next-btn" disabled>date bag packed →</button>
+          <p class="unlock-note">Pack all 3 date things to continue.</p>
         </article>
 
         <article class="card quest">
-          <p class="quest-number">QUEST 05 / 06</p>
+          <p class="quest-number">QUEST 06 / 07</p>
           <div class="quest-art silly">🐸<span>🎀</span></div>
           <h2>Very serious silly test</h2>
           <p>Why did the boyfriend bring a ladder to the relationship?</p>
@@ -78,31 +102,33 @@
             <button class="quiz-btn" data-quiz="No, but this answer is adorable and receives one free kiss.">To find Maneef</button>
             <button class="quiz-btn" data-quiz="Correct-ish. The actual answer was worse. Please laugh anyway, this is important.">Because he is a little idiot</button>
           </div>
-          <button class="text-btn next-btn">forgive the joke, continue →</button>
+          <button class="primary-btn next-btn" disabled>judge the comedian →</button>
+          <p class="unlock-note">Pick an answer. The comedian needs feedback.</p>
         </article>
 
         <article class="card quest">
-          <p class="quest-number">QUEST 06 / 06</p>
+          <p class="quest-number">QUEST 07 / 07 · AFFECTION CHECKPOINT</p>
           <div class="quest-art flowers">🌷<span>🌼</span><b>🌸</b></div>
           <h2>Unlimited affection booth</h2>
-          <p>Tap as many as you like. These are unlimited, non-refundable, and specifically reserved for Maneef.</p>
+          <p>Tap each one once. They are reserved only for Maneef, the cutest person to ever make my heart panic a little.</p>
           <div class="choice-grid">
-            <button class="choice reward-btn" data-reward="A kiss has been launched directly at your cute face. MWAH!">💋<small>one kiss</small></button>
-            <button class="choice reward-btn" data-reward="A warm hug is now squeezing you very carefully. No escaping.">🫂<small>one hug</small></button>
-            <button class="choice reward-btn" data-reward="Official notice: you are my favourite little universe.">💌<small>a note</small></button>
+            <button class="choice collect-choice" data-reward="A kiss has been launched directly at your cute face. MWAH!">💋<small>one kiss</small></button>
+            <button class="choice collect-choice" data-reward="A warm hug is now squeezing you very carefully. No escaping.">🫂<small>one hug</small></button>
+            <button class="choice collect-choice" data-reward="Official notice: you are my favourite little universe.">💌<small>a note</small></button>
           </div>
-          <button class="primary-btn next-btn">I am sufficiently spoiled (probably) ♡</button>
+          <button class="primary-btn next-btn" disabled>open the final surprise ♡</button>
+          <p class="unlock-note">Claim every tiny love thing to open the finale.</p>
         </article>
       </section>
 
       <section class="card finale hidden" id="finale">
         <div class="crown">👑</div>
         <p class="eyebrow">MISSION: SOFTEN MANEEF'S HEART</p>
-        <h2>Completed-ish? <span>♡</span></h2>
+        <h2>You made it. <span>♡</span></h2>
         <p class="big-message">I know I can be a little idiot sometimes.<br />But I’m your little idiot, and I choose you—always, loudly, and with extra kisses.</p>
         <div class="love-letter">
           <span>Dear Maneef,</span>
-          <p>Please accept this pocket-sized reminder that you are wildly adored. Your smile is my favourite plot twist, so I will keep trying to earn it—one silly little moment at a time.</p>
+          <p>Thank you for staying through this very silly quest. I hope the apology reached your heart, and I hope I can keep proving that you are deeply loved—in the boring everyday ways and the ridiculous little ones too.</p>
           <strong>Happy tears are allowed. You matter that much. ♡</strong>
         </div>
         <button class="kiss-btn" id="kiss-btn">send Maneef 100 kisses <span>💋</span></button>
@@ -115,7 +141,7 @@
             <button class="rating-btn" data-rating="DING DING DING! Maneef wins one lifelong silly little boyfriend. Congratulations!">🏆 my little idiottt</button>
           </div>
         </div>
-        <p class="reaction" id="reaction">psst... the correct reaction is: “awww my little idiottt”</p>
+        <p class="reaction">psst... the correct reaction is: “awww my little idiottt”</p>
       </section>
     </main>
     <div id="toast" role="status"></div>
